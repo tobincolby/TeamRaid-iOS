@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE3E9DED1F8944FB00363B39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E9DEC1F8944FB00363B39 /* AppDelegate.swift */; };
+		EE3E9DEF1F8944FB00363B39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E9DEE1F8944FB00363B39 /* ViewController.swift */; };
+		EE3E9DF21F8944FB00363B39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3E9DF01F8944FB00363B39 /* Main.storyboard */; };
+		EE3E9DF41F8944FB00363B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3E9DF31F8944FB00363B39 /* Assets.xcassets */; };
+		EE3E9DF71F8944FB00363B39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3E9DF51F8944FB00363B39 /* LaunchScreen.storyboard */; };
+		EE3E9E021F8944FC00363B39 /* RatasticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E9E011F8944FC00363B39 /* RatasticTests.swift */; };
+		EE3E9E0D1F8944FC00363B39 /* RatasticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E9E0C1F8944FC00363B39 /* RatasticUITests.swift */; };
+		EE3E9E1B1F8946FB00363B39 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E9E1A1F8946FB00363B39 /* RegisterViewController.swift */; };
+		EE3E9E1E1F8948E300363B39 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E9E1D1F8948E300363B39 /* User.swift */; };
+		EE3E9E201F894C7F00363B39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E9E1F1F894C7F00363B39 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE3E9DFE1F8944FC00363B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE3E9DE11F8944FB00363B39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE3E9DE81F8944FB00363B39;
+			remoteInfo = Ratastic;
+		};
+		EE3E9E091F8944FC00363B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE3E9DE11F8944FB00363B39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE3E9DE81F8944FB00363B39;
+			remoteInfo = Ratastic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE3E9DE91F8944FB00363B39 /* Ratastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3E9DEC1F8944FB00363B39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE3E9DEE1F8944FB00363B39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE3E9DF11F8944FB00363B39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE3E9DF31F8944FB00363B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE3E9DF61F8944FB00363B39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE3E9DF81F8944FB00363B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE3E9DFD1F8944FC00363B39 /* RatasticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatasticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3E9E011F8944FC00363B39 /* RatasticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatasticTests.swift; sourceTree = "<group>"; };
+		EE3E9E031F8944FC00363B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE3E9E081F8944FC00363B39 /* RatasticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatasticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3E9E0C1F8944FC00363B39 /* RatasticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatasticUITests.swift; sourceTree = "<group>"; };
+		EE3E9E0E1F8944FC00363B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE3E9E1A1F8946FB00363B39 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EE3E9E1D1F8948E300363B39 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE3E9E1F1F894C7F00363B39 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE3E9DE61F8944FB00363B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3E9DFA1F8944FC00363B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3E9E051F8944FC00363B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE3E9DE01F8944FB00363B39 = {
+			isa = PBXGroup;
+			children = (
+				EE3E9DEB1F8944FB00363B39 /* Ratastic */,
+				EE3E9E001F8944FC00363B39 /* RatasticTests */,
+				EE3E9E0B1F8944FC00363B39 /* RatasticUITests */,
+				EE3E9DEA1F8944FB00363B39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE3E9DEA1F8944FB00363B39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE3E9DE91F8944FB00363B39 /* Ratastic.app */,
+				EE3E9DFD1F8944FC00363B39 /* RatasticTests.xctest */,
+				EE3E9E081F8944FC00363B39 /* RatasticUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE3E9DEB1F8944FB00363B39 /* Ratastic */ = {
+			isa = PBXGroup;
+			children = (
+				EE3E9E1C1F8948CA00363B39 /* model */,
+				EE3E9DEC1F8944FB00363B39 /* AppDelegate.swift */,
+				EE3E9DEE1F8944FB00363B39 /* ViewController.swift */,
+				EE3E9DF01F8944FB00363B39 /* Main.storyboard */,
+				EE3E9DF31F8944FB00363B39 /* Assets.xcassets */,
+				EE3E9DF51F8944FB00363B39 /* LaunchScreen.storyboard */,
+				EE3E9DF81F8944FB00363B39 /* Info.plist */,
+				EE3E9E1A1F8946FB00363B39 /* RegisterViewController.swift */,
+				EE3E9E1F1F894C7F00363B39 /* LoginViewController.swift */,
+			);
+			path = Ratastic;
+			sourceTree = "<group>";
+		};
+		EE3E9E001F8944FC00363B39 /* RatasticTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE3E9E011F8944FC00363B39 /* RatasticTests.swift */,
+				EE3E9E031F8944FC00363B39 /* Info.plist */,
+			);
+			path = RatasticTests;
+			sourceTree = "<group>";
+		};
+		EE3E9E0B1F8944FC00363B39 /* RatasticUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE3E9E0C1F8944FC00363B39 /* RatasticUITests.swift */,
+				EE3E9E0E1F8944FC00363B39 /* Info.plist */,
+			);
+			path = RatasticUITests;
+			sourceTree = "<group>";
+		};
+		EE3E9E1C1F8948CA00363B39 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EE3E9E1D1F8948E300363B39 /* User.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE3E9DE81F8944FB00363B39 /* Ratastic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3E9E111F8944FC00363B39 /* Build configuration list for PBXNativeTarget "Ratastic" */;
+			buildPhases = (
+				EE3E9DE51F8944FB00363B39 /* Sources */,
+				EE3E9DE61F8944FB00363B39 /* Frameworks */,
+				EE3E9DE71F8944FB00363B39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ratastic;
+			productName = Ratastic;
+			productReference = EE3E9DE91F8944FB00363B39 /* Ratastic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE3E9DFC1F8944FC00363B39 /* RatasticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3E9E141F8944FC00363B39 /* Build configuration list for PBXNativeTarget "RatasticTests" */;
+			buildPhases = (
+				EE3E9DF91F8944FC00363B39 /* Sources */,
+				EE3E9DFA1F8944FC00363B39 /* Frameworks */,
+				EE3E9DFB1F8944FC00363B39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE3E9DFF1F8944FC00363B39 /* PBXTargetDependency */,
+			);
+			name = RatasticTests;
+			productName = RatasticTests;
+			productReference = EE3E9DFD1F8944FC00363B39 /* RatasticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE3E9E071F8944FC00363B39 /* RatasticUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3E9E171F8944FC00363B39 /* Build configuration list for PBXNativeTarget "RatasticUITests" */;
+			buildPhases = (
+				EE3E9E041F8944FC00363B39 /* Sources */,
+				EE3E9E051F8944FC00363B39 /* Frameworks */,
+				EE3E9E061F8944FC00363B39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE3E9E0A1F8944FC00363B39 /* PBXTargetDependency */,
+			);
+			name = RatasticUITests;
+			productName = RatasticUITests;
+			productReference = EE3E9E081F8944FC00363B39 /* RatasticUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE3E9DE11F8944FB00363B39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Team Raid";
+				TargetAttributes = {
+					EE3E9DE81F8944FB00363B39 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					EE3E9DFC1F8944FC00363B39 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE3E9DE81F8944FB00363B39;
+					};
+					EE3E9E071F8944FC00363B39 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE3E9DE81F8944FB00363B39;
+					};
+				};
+			};
+			buildConfigurationList = EE3E9DE41F8944FB00363B39 /* Build configuration list for PBXProject "Ratastic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE3E9DE01F8944FB00363B39;
+			productRefGroup = EE3E9DEA1F8944FB00363B39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE3E9DE81F8944FB00363B39 /* Ratastic */,
+				EE3E9DFC1F8944FC00363B39 /* RatasticTests */,
+				EE3E9E071F8944FC00363B39 /* RatasticUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE3E9DE71F8944FB00363B39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3E9DF71F8944FB00363B39 /* LaunchScreen.storyboard in Resources */,
+				EE3E9DF41F8944FB00363B39 /* Assets.xcassets in Resources */,
+				EE3E9DF21F8944FB00363B39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3E9DFB1F8944FC00363B39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3E9E061F8944FC00363B39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE3E9DE51F8944FB00363B39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3E9E1E1F8948E300363B39 /* User.swift in Sources */,
+				EE3E9E1B1F8946FB00363B39 /* RegisterViewController.swift in Sources */,
+				EE3E9DEF1F8944FB00363B39 /* ViewController.swift in Sources */,
+				EE3E9E201F894C7F00363B39 /* LoginViewController.swift in Sources */,
+				EE3E9DED1F8944FB00363B39 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3E9DF91F8944FC00363B39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3E9E021F8944FC00363B39 /* RatasticTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3E9E041F8944FC00363B39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3E9E0D1F8944FC00363B39 /* RatasticUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE3E9DFF1F8944FC00363B39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE3E9DE81F8944FB00363B39 /* Ratastic */;
+			targetProxy = EE3E9DFE1F8944FC00363B39 /* PBXContainerItemProxy */;
+		};
+		EE3E9E0A1F8944FC00363B39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE3E9DE81F8944FB00363B39 /* Ratastic */;
+			targetProxy = EE3E9E091F8944FC00363B39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE3E9DF01F8944FB00363B39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3E9DF11F8944FB00363B39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE3E9DF51F8944FB00363B39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3E9DF61F8944FB00363B39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE3E9E0F1F8944FC00363B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE3E9E101F8944FC00363B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE3E9E121F8944FC00363B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ratastic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamraid.Ratastic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE3E9E131F8944FC00363B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ratastic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamraid.Ratastic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EE3E9E151F8944FC00363B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RatasticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamraid.RatasticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ratastic.app/Ratastic";
+			};
+			name = Debug;
+		};
+		EE3E9E161F8944FC00363B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RatasticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamraid.RatasticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ratastic.app/Ratastic";
+			};
+			name = Release;
+		};
+		EE3E9E181F8944FC00363B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RatasticUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamraid.RatasticUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Ratastic;
+			};
+			name = Debug;
+		};
+		EE3E9E191F8944FC00363B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RatasticUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamraid.RatasticUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Ratastic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE3E9DE41F8944FB00363B39 /* Build configuration list for PBXProject "Ratastic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3E9E0F1F8944FC00363B39 /* Debug */,
+				EE3E9E101F8944FC00363B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE3E9E111F8944FC00363B39 /* Build configuration list for PBXNativeTarget "Ratastic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3E9E121F8944FC00363B39 /* Debug */,
+				EE3E9E131F8944FC00363B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE3E9E141F8944FC00363B39 /* Build configuration list for PBXNativeTarget "RatasticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3E9E151F8944FC00363B39 /* Debug */,
+				EE3E9E161F8944FC00363B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE3E9E171F8944FC00363B39 /* Build configuration list for PBXNativeTarget "RatasticUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3E9E181F8944FC00363B39 /* Debug */,
+				EE3E9E191F8944FC00363B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE3E9DE11F8944FB00363B39 /* Project object */;
+}
