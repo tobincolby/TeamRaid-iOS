@@ -93,12 +93,25 @@
                                     <action selector="loginUser:" destination="wMK-4V-aka" eventType="touchUpInside" id="0Q9-mz-Lb2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gem-XY-Rxp">
+                                <rect key="frame" x="157" y="120" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="X8V-hc-hC6"/>
+                                    <constraint firstAttribute="width" constant="50" id="et9-c8-wug"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="BRC-zx-cpr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dfF-fz-CC1" firstAttribute="top" secondItem="hE8-no-2eV" secondAttribute="bottom" constant="16" id="78F-vC-QP6"/>
                             <constraint firstItem="xmu-Ba-oIE" firstAttribute="leading" secondItem="Zlh-vG-g6N" secondAttribute="leadingMargin" constant="16" id="ADh-l6-JSx"/>
+                            <constraint firstItem="gem-XY-Rxp" firstAttribute="leading" secondItem="dfF-fz-CC1" secondAttribute="trailing" constant="75" id="C9P-fa-9wl"/>
                             <constraint firstItem="dfF-fz-CC1" firstAttribute="leading" secondItem="Zlh-vG-g6N" secondAttribute="leadingMargin" constant="16" id="LHw-oT-2fe"/>
+                            <constraint firstItem="gem-XY-Rxp" firstAttribute="top" secondItem="hE8-no-2eV" secondAttribute="bottom" constant="16" id="P7D-xY-HDz"/>
                             <constraint firstItem="hE8-no-2eV" firstAttribute="top" secondItem="xmu-Ba-oIE" secondAttribute="bottom" constant="8" id="Z69-Xi-dc0"/>
                             <constraint firstItem="xmu-Ba-oIE" firstAttribute="top" secondItem="PmD-24-moh" secondAttribute="bottom" constant="16" id="o3f-tt-vT9"/>
                             <constraint firstItem="hE8-no-2eV" firstAttribute="leading" secondItem="Zlh-vG-g6N" secondAttribute="leadingMargin" constant="16" id="qZC-SN-mtL"/>
@@ -107,11 +120,30 @@
                     <connections>
                         <outlet property="emailField" destination="xmu-Ba-oIE" id="QeB-m1-SU2"/>
                         <outlet property="passField" destination="hE8-no-2eV" id="6tR-RA-1Lu"/>
+                        <segue destination="ZAw-c3-yG4" kind="presentation" identifier="mainPage" id="Mbc-jc-Tqt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="al9-IL-wk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="440"/>
+            <point key="canvasLocation" x="860" y="439.43028485757122"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2FG-ls-WgJ">
+            <objects>
+                <viewController id="ZAw-c3-yG4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="48t-rX-3Ro"/>
+                        <viewControllerLayoutGuide type="bottom" id="LlD-ej-hdZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ptb-Hx-3wa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaY-W8-GhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1587" y="192"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="ZVy-LL-id5">
@@ -176,6 +208,17 @@
                                     <action selector="registerUser:" destination="WvX-kI-sOn" eventType="touchUpInside" id="ZKu-3l-kze"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctu-oC-CUC">
+                                <rect key="frame" x="152" y="196" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="T0q-K8-QM2"/>
+                                    <constraint firstAttribute="height" constant="30" id="dxn-5q-oss"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="zey-Cz-E8P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -187,8 +230,10 @@
                             <constraint firstItem="YGv-AO-vSC" firstAttribute="top" secondItem="Box-Um-ECf" secondAttribute="bottom" constant="16" id="PF5-hc-pYK"/>
                             <constraint firstItem="6B5-DY-LAp" firstAttribute="leading" secondItem="MLR-xh-9yG" secondAttribute="leadingMargin" constant="16" id="RtJ-Bd-cW1"/>
                             <constraint firstItem="vWg-Y0-KBu" firstAttribute="top" secondItem="6B5-DY-LAp" secondAttribute="bottom" constant="8" id="caP-Hw-BQk"/>
+                            <constraint firstItem="ctu-oC-CUC" firstAttribute="top" secondItem="vWg-Y0-KBu" secondAttribute="bottom" constant="16" id="jAl-u3-A52"/>
                             <constraint firstItem="YGv-AO-vSC" firstAttribute="leading" secondItem="MLR-xh-9yG" secondAttribute="leadingMargin" constant="16" id="mGc-PB-F1e"/>
                             <constraint firstItem="rs4-PM-f49" firstAttribute="leading" secondItem="MLR-xh-9yG" secondAttribute="leadingMargin" constant="16" id="rU2-BN-rie"/>
+                            <constraint firstItem="ctu-oC-CUC" firstAttribute="leading" secondItem="rs4-PM-f49" secondAttribute="trailing" constant="53" id="xa7-54-NB6"/>
                         </constraints>
                     </view>
                     <connections>
@@ -201,7 +246,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExG-k8-zHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671" y="-304"/>
+            <point key="canvasLocation" x="669.60000000000002" y="-304.4977511244378"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zey-Cz-E8P"/>
+    </inferredMetricsTieBreakers>
 </document>

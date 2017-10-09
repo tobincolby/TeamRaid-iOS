@@ -39,6 +39,7 @@ class LoginViewController: UIViewController {
             if user.isEqual(logUser) {
                 //found correct user
                 User.currentUser = user
+                self.performSegue(withIdentifier: "mainPage", sender: self)
             }
         }
         
