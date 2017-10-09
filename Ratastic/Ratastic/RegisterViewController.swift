@@ -17,17 +17,19 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if (UserDefaults.standard.object(forKey: "userArray") as? NSMutableArray) == nil {
+        if (UserDefaults.standard.data(forKey: "userArray")) == nil {
             let mutableArray = NSMutableArray()
-            UserDefaults.standard.set(mutableArray, forKey: "userArray")
+            UserDefaults.standard.set(User.convertUsersToData(users: mutableArray), forKey: "userArray")
         }
     }
 
 
     @IBAction func registerUser(_ sender: Any) {
         
-        guard let userArray = UserDefaults.standard.object(forKey: "userArray") as? NSMutableArray
+        guard let userData = UserDefaults.standard.data(forKey: "userArray")
             else { return }
+        
+        let userArray = User.convertDataToUsers(data: userData)
         
         if passField.text == confirmPassField.text {
             
@@ -40,8 +42,8 @@ class RegisterViewController: UIViewController {
             }
             
             let newUser = User(name: nameField.text ?? "", email: emailField.text ?? "", password: passField.text ?? "")
-            userArray.add(newUser)
-            UserDefaults.standard.set(userArray, forKey: "userArray")
+            userArray.insert(newUser, at: 0)
+            UserDefaults.standard.set(User.convertUsersToData(users: userArray), forKey: "userArray")
             
             performSegue(withIdentifier: "welcomePage", sender: self)
         }

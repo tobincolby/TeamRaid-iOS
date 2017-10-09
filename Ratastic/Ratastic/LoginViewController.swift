@@ -15,9 +15,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if (UserDefaults.standard.object(forKey: "userArray") as? NSMutableArray) == nil {
+        if (UserDefaults.standard.data(forKey: "userArray")) == nil {
             let mutableArray = NSMutableArray()
-            UserDefaults.standard.set(mutableArray, forKey: "userArray")
+            UserDefaults.standard.set(User.convertUsersToData(users: mutableArray), forKey: "userArray")
         }
         
         // Do any additional setup after loading the view.
@@ -30,9 +30,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginUser(_ sender: Any) {
         
-        guard let userArray = UserDefaults.standard.object(forKey: "userArray") as? NSMutableArray else {
+        guard let userData = UserDefaults.standard.data(forKey: "userArray") else {
             return
         }
+        
+        let userArray = User.convertDataToUsers(data: userData)
+        
         let logUser = User(name: "", email: emailField.text ?? "", password: passField.text ?? "")
         for obj in userArray {
             guard let user = obj as? User else { return }
