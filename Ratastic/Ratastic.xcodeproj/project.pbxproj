@@ -17,6 +17,12 @@
 		EE3E9E1B1F8946FB00363B39 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E9E1A1F8946FB00363B39 /* RegisterViewController.swift */; };
 		EE3E9E1E1F8948E300363B39 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E9E1D1F8948E300363B39 /* User.swift */; };
 		EE3E9E201F894C7F00363B39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E9E1F1F894C7F00363B39 /* LoginViewController.swift */; };
+		EE8005441FAA3BAE007AFDF7 /* RatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8005431FAA3BAE007AFDF7 /* RatListViewController.swift */; };
+		EE8005461FAA3C9B007AFDF7 /* RatSighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8005451FAA3C9B007AFDF7 /* RatSighting.swift */; };
+		EE8005481FAA3CA4007AFDF7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8005471FAA3CA4007AFDF7 /* Location.swift */; };
+		EE80054A1FAA4428007AFDF7 /* csvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8005491FAA4428007AFDF7 /* csvParser.swift */; };
+		EE80054D1FAA45CB007AFDF7 /* Rat_Sightings.csv in Resources */ = {isa = PBXBuildFile; fileRef = EE80054C1FAA45CB007AFDF7 /* Rat_Sightings.csv */; };
+		EE80054F1FAA52E2007AFDF7 /* RatSightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80054E1FAA52E2007AFDF7 /* RatSightingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		EE3E9E1A1F8946FB00363B39 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EE3E9E1D1F8948E300363B39 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EE3E9E1F1F894C7F00363B39 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EE8005431FAA3BAE007AFDF7 /* RatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatListViewController.swift; sourceTree = "<group>"; };
+		EE8005451FAA3C9B007AFDF7 /* RatSighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatSighting.swift; sourceTree = "<group>"; };
+		EE8005471FAA3CA4007AFDF7 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EE8005491FAA4428007AFDF7 /* csvParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csvParser.swift; sourceTree = "<group>"; };
+		EE80054C1FAA45CB007AFDF7 /* Rat_Sightings.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rat_Sightings.csv; sourceTree = "<group>"; };
+		EE80054E1FAA52E2007AFDF7 /* RatSightingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatSightingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,7 @@
 		EE3E9DEB1F8944FB00363B39 /* Ratastic */ = {
 			isa = PBXGroup;
 			children = (
+				EE80054B1FAA45C0007AFDF7 /* data */,
 				EE3E9E1C1F8948CA00363B39 /* model */,
 				EE3E9DEC1F8944FB00363B39 /* AppDelegate.swift */,
 				EE3E9DEE1F8944FB00363B39 /* ViewController.swift */,
@@ -112,6 +125,9 @@
 				EE3E9DF81F8944FB00363B39 /* Info.plist */,
 				EE3E9E1A1F8946FB00363B39 /* RegisterViewController.swift */,
 				EE3E9E1F1F894C7F00363B39 /* LoginViewController.swift */,
+				EE8005431FAA3BAE007AFDF7 /* RatListViewController.swift */,
+				EE8005491FAA4428007AFDF7 /* csvParser.swift */,
+				EE80054E1FAA52E2007AFDF7 /* RatSightingViewController.swift */,
 			);
 			path = Ratastic;
 			sourceTree = "<group>";
@@ -138,8 +154,18 @@
 			isa = PBXGroup;
 			children = (
 				EE3E9E1D1F8948E300363B39 /* User.swift */,
+				EE8005451FAA3C9B007AFDF7 /* RatSighting.swift */,
+				EE8005471FAA3CA4007AFDF7 /* Location.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		EE80054B1FAA45C0007AFDF7 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EE80054C1FAA45CB007AFDF7 /* Rat_Sightings.csv */,
+			);
+			name = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE3E9DF71F8944FB00363B39 /* LaunchScreen.storyboard in Resources */,
+				EE80054D1FAA45CB007AFDF7 /* Rat_Sightings.csv in Resources */,
 				EE3E9DF41F8944FB00363B39 /* Assets.xcassets in Resources */,
 				EE3E9DF21F8944FB00363B39 /* Main.storyboard in Resources */,
 			);
@@ -278,8 +305,13 @@
 			files = (
 				EE3E9E1E1F8948E300363B39 /* User.swift in Sources */,
 				EE3E9E1B1F8946FB00363B39 /* RegisterViewController.swift in Sources */,
+				EE8005481FAA3CA4007AFDF7 /* Location.swift in Sources */,
+				EE80054F1FAA52E2007AFDF7 /* RatSightingViewController.swift in Sources */,
 				EE3E9DEF1F8944FB00363B39 /* ViewController.swift in Sources */,
 				EE3E9E201F894C7F00363B39 /* LoginViewController.swift in Sources */,
+				EE8005441FAA3BAE007AFDF7 /* RatListViewController.swift in Sources */,
+				EE80054A1FAA4428007AFDF7 /* csvParser.swift in Sources */,
+				EE8005461FAA3C9B007AFDF7 /* RatSighting.swift in Sources */,
 				EE3E9DED1F8944FB00363B39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +557,7 @@
 				EE3E9E131F8944FC00363B39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE3E9E141F8944FC00363B39 /* Build configuration list for PBXNativeTarget "RatasticTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +566,7 @@
 				EE3E9E161F8944FC00363B39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE3E9E171F8944FC00363B39 /* Build configuration list for PBXNativeTarget "RatasticUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +575,7 @@
 				EE3E9E191F8944FC00363B39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
